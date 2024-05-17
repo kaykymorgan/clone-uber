@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+        
+            <div class="navmenu">
+
+                <div class="logo">
+                    <h2 >Uber</h2>
+                </div>
+        
+                <ul class="menu-desktop">
+                    <li><a href="#">Viaje</a></li>
+                    <li><a href="#">Dirigir</a></li>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    
+                </ul>
+               
+            </div>
+
+            <div>
+                <ul class="menu-desktop">
+                    <li><a href="#">PT-BR</a></li>
+                    <li><a href="#">Fazer login</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#" id="btn-cadastro">Cadastre-se</a></li>
+                </ul>
+    
+            </div>
+
+
+        <!-- Menu Mobile-->
+            <div class="menu-mobile" id="menu-mobile" >
+
+                <i class="fa-solid fa-x close" id="close"></i>
+
+                <ul >
+                    <li><a href="#">Viaje</a></li>
+                    <li><a href="#">Dirigir</a></li>
+                    <li><a href="#">Empresa</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Fazer login</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+    
+           
+            <button class="hamburguer" id="hamburguer-btn"">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+    
+   
+    <!-- Conteudo principal -->
+    <main>
+        <!-- Home -->
+        <section class="home " id="home">
+            <div class="text">
+                <h1>Vá a qualquer lugar com o app da Uber</h1>
+                <p>Solicite uma viagem, entre no carro e relaxe.</p>
+                
+                <input type="text" placeholder="Informe o local">
+                <input type="text" placeholder="Informar o destino">
+                
+                <div>
+                    <button class="btn-home">Ver preços</button>
+                </div>
+    
+            </div>
+
+            <div class="img">
+                <figure> <img src="assets/home-img.webp" alt=""></figure>
+                
+            </div>
+        </section>
+
+        <!-- Segunda seção  -->
+        <section class="login alinhamento " >
+
+            <div class="img">
+                <figure> <img src="./assets/sec1-img.webp" alt=""></figure>
+            </div>
+
+            <div class="text">
+                <h1>Dirija quando quiser e ganhe de acordo com suas necessidades</h1>
+                <p>Ganhe dinheiro com entregas e viagens no horário que você definir. Você pode usar seu próprio carro ou escolher um carro alugado por meio do app da Uber.</p>
+              
+                <div class="dir">
+                    <button class="btn-dark">Começar</button>
+                    <span><a href="#"  class="text-link">Já tem uma conta? Fazer login.</a></span>
+                </div>
+
+            </div>
+     
+        </section>
+
+        <!-- Terceira seção  -->
+        <section class="plataforma alinhamento">
+            <div class="text">
+                <h1>A plataforma Uber que você conhece, reinventada para empresas</h1>
+                <p>A
+                    Uber para Empresas é uma plataforma global de gestão de viagens, refeições e entregas locais para empresas de todos os portes.</p>
+                
+                    <div>
+                    <button class="btn-dark">Começar</button>
+                    <span><a href="#"  class="text-link">Confira nossas soluções</a></span>
+                </div>
+    
+            </div>
+
+            <div class="img">
+                <figure> <img src="assets/sec2-img.webp" alt=""></figure>
+                
+            </div>
+        </section>
+
+        <!-- Quarta seção  -->
+        <section class="novidades alinhamento">
+            <div class="text">
+                <h1>Confira as novidades da Uber</h1>
+                <p>Os produtos e recursos anunciados no Go-Get 2024 foram projetados para ajudar você a se conectar com outras pessoas e economizar um pouco de dinheiro pelo caminho. Descubra como fazemos de cada jornada uma oportunidade de interação, porque a vida é melhor quando estamos juntos.</p>
+                
+                <div>
+                    <button class="btn-dark">Assista ao evento</button>
+                </div>
+            </div>
+            <div class="img">
+                <figure> <img src="assets/sec3-img.webp" alt=""></figure>
+            </div>
+        </section>
+
+       
+    </main>
+   
+    <!-- Artigo com os Qr codes  -->
+    <article>
+        <div class="title">
+            <h1>É mais fácil pelo app</h1>
+        </div>
+        
+        <div class="code">
+            <div class="card">
+                <div>
+                    <figure><img src="./assets/qr-uber.webp" alt=""></figure>
+                </div>
+                <div class="card-text">
+                    <h3>Baixe o app da Uber</h3>
+                    <p>Leia o código QR para baixar o app</p>
+                </div>
+                <div class="arrow-qr">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <figure><img src="./assets/qr-parceiro.webp" alt=""></figure>
+                </div>
+                <div class="card-text">
+                    <h3>Baixe o app de parceiro</h3>
+                    <p>Leia o código QR para baixar o app</p>
+                </div>
+                <div class="arrow-qr">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="alinhamento">
+
+            <div class="contato">
+                <div>
+                    <h3>Uber</h3>
+                </div>
+                <div class="localizacao">
+                    <p>Uber Technologies Inc. | Uber do Brasil Tecnologia Ltda |</p>
+                    <p>Avenida Brigadeiro Faria Lima, n.º 949, Pinheiros, São Paulo/SP </p>
+                    <p>CEP 05.426-200 | CNPJ: 17.895.646/0001-87</p>
+                </div>
+            </div>
+
+            <div class="ajuda">
+                <h3>Acesse a Central de Ajuda</h3>
+            </div>
+
+            <div class="tables">
+                <div class="empresa">
+                
+                    <ul>
+                        <li><h4>Empresa</h4></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">O que oferecemos</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Investidores</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                    </ul>
+                </div>
+        
+                <div class="produtos">
+                    <ul>
+                        <li><h4>Produtos</h4></li>
+                        <li><a href="#">Viajar</a></li>
+                        <li><a href="#">Dirigir</a></li>
+                        <li><a href="#">Fazer entregas</a></li>
+                        <li><a href="#">Faça um pedido</a></li>
+                        <li><a href="#">Uber para Empresas</a></li>
+                        <li><a href="#">Uber Freight</a></li>
+                    </ul>
+                </div>
+        
+                <div class="cidadania">
+                    
+                    <ul>
+                        <li><h4>Cidadania global</h4></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Diversidade e inclusão</a></li>
+                        <li><a href="#">Sustentabilidade</a></li>
+                    </ul>
+                </div>
+        
+                <div class="viaje">
+                    
+                    <ul>
+                        <li><h4>Viaje</h4></li>
+                        <li><a href="#">Reservar</a></li>
+                        <li><a href="#">Aeroportos</a></li>
+                        <li><a href="#">Cidades</a></li>
+                        
+                    </ul>
+                </div>
+        
+            </div>
+
+            <div class="icons">
+                <div class="social-media">
+                    <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="icon-local">
+                    <i class="fa-solid fa-globe"> <span> Portugues (Brasil)</span></i>
+                    <i class="fa-solid fa-location-dot"> <span> Itapetininga</i>
+                </div>
+            </div>
+
+            <div class="store">
+                <figure><img src="./assets/play-store.svg" alt=""></figure>
+                <figure><img src="./assets/apple-store.svg" alt=""></figure>
+            </div>
+
+            <div class="direitos">
+                <span> © 2024 Uber Technologies Inc. </span>
+                <div>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

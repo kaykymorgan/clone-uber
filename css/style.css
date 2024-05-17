@@ -1,0 +1,453 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+
+/* Definições globais e variáveis de cores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uber Move Text', sans-serif;
+}
+
+:root {
+    --bg-black: #000000;
+    --btn-white: #FFFFFF;
+    --btn-dark-hover: #333333; 
+    --btn-white-hover: #EEEEEE;
+    --bg-input: #F3F3F3;
+    --text-black: #000000;
+    --text-white: #FFFFFF;
+    --text-footer: #dfdcdc;
+    --bg-app: #F6F6F6;
+}
+
+
+
+/* Menu - Navbar */
+
+header {
+    background-color: var(--bg-black);
+}
+
+.hamburguer, .close {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--text-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/*Menu desktop*/
+.logo {
+    color: var(--text-white);
+    margin: 16px;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.6rem 2.2rem;
+    background-color: var(--bg-black);
+    height: 70px;
+    font-weight: 600;
+}
+
+.menu-desktop {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu-desktop a{
+    color: var(--text-white);
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+/* Menu mobile */
+
+#close {
+    display: block;
+    margin: 10px;
+    color: var(--text-black);
+}
+
+.menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: var(--btn-white);
+}
+
+.menu-mobile ul {
+    list-style: none;
+}
+
+.menu-mobile.open {
+    display: block;
+    transform: translateX(0);
+}
+
+
+.menu-mobile a{
+    color: var(--text-black);
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.menu-desktop a:hover, .menu-mobile a:hover {
+    border-radius: 10px;
+    background-color: #333333;
+    
+}
+
+#btn-cadastro {
+    border: none;
+    padding: .6rem;
+    border-radius: .8rem;
+    background-color: var(--text-white);
+    color: var(--text-black);
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+/* Separa as seções em colunas */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* Alinha as margens laterais */
+
+.alinhamento {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Deixa a div de texto e imagem lado a lado e quebra ao diminuir a tela */
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 3rem;
+}
+
+/*Se moldam ao tamanho do container */
+
+section .img, section .text {
+    flex: 1; 
+    padding: 1rem;
+}
+
+/* Ajusta o tamanho e altura das imagens */
+
+.login img, .plataforma img, .novidades img, .home img {
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Estilização da homepage */
+
+.home {
+    width: 100%;
+    background-color: var(--bg-black);
+    padding: 0 8%;
+
+}
+
+.home h1, .home p {
+    color: var(--text-white);
+}
+
+.home input {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    margin: 8px 0px ;
+    font-size: 16px;
+}
+
+.btn-home {
+    border: none;
+    padding: .9rem;
+    border-radius: .6rem;
+    color: var(--text-black);
+    background-color: var(--btn-white);
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.hamburguer, .close {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--text-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Estilização global de elementos que se repetem */
+
+.text h1 {
+    margin-bottom: 20px;
+    font-size: 2.9rem;
+    
+}
+
+.text p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+/*Link ao lado do botão */
+
+.text-link {
+    color: var(--text-black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--btn-dark-hover);
+    margin: 1.4rem;
+}
+
+/* Botão */
+
+.btn-dark {
+    border: none;
+    padding: .9rem;
+    border-radius: .6rem;
+    color: var(--text-white);
+    background-color: var(--bg-black);
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.btn-dark:hover {
+    background-color: var(--btn-dark-hover);
+}
+
+/* Botão e link */
+
+.dir {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Area de QR CODES */
+
+article {
+    background-color: var(--bg-input);
+    padding-top: 38px;
+    padding-bottom: 40px;
+}
+
+.title {
+    padding: 0 8%;
+    margin: 14px 0;
+    font-size: 22px;
+}
+
+.code {
+    display: flex;
+    padding: 0 8%;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--text-white);
+    padding: 1.25rem 2.2rem;
+    gap: 10px;
+}
+
+
+.card h4, p {
+    font-size: 18px;
+}
+
+/* Animação da arrow */
+
+.card:hover .arrow-qr {
+    transform: translateX(10px); 
+}
+
+.arrow-qr {
+    transition: transform 0.3s ease; 
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bg-black);
+    color: var(--text-footer);
+    padding: 2rem;
+     
+}
+
+/* Uber - localização */
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+/* Link para area de ajuda */
+
+.ajuda {
+    margin: 1.8rem 0;
+}
+
+/* Estilização e ordem de todas as tabelas do footer */
+.tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    margin: 10px;
+}
+
+.footer a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: var(--btn-dark-hover);
+}
+
+
+
+/* Estilização dos icones de redes sociais do footer */
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.icons i {
+    padding: 16px;
+    
+}
+
+.icons i:hover {
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.store img {
+    width: 120px;
+    margin: 10px;
+}
+
+/* Estilização dos direitos autorais da pagina */
+
+.direitos {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+.direitos ul {
+    display: flex;
+    gap: 10px;
+}
+
+/*Responsividade */
+
+@media (max-width: 768px) {
+    /*Itens do menu desktop somem e aparece o menu mobile */
+    .menu-desktop {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    /*Quando a tela diminuir os elementos da seção mudam de linha para coluna e ganham espaço entre eles */
+    section {
+        flex-direction: column-reverse;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .dir{
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .card , .code{
+        flex-direction: column;
+        gap: 2rem;
+        
+    }
+
+
+    .contato, .tables, .icons, .direitos{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
